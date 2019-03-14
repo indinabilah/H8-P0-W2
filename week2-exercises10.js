@@ -1,8 +1,10 @@
 function bandingkanAngka(angka1, angka2) {
-  if(angka2 > angka1){
-    return angka2
+  if(angka1 === angka2){
+    return -1
+  }else if(angka2 > angka1){
+    return true
   }else{
-    return angka1
+    return false
   }
   // you can only write your code here!
 }
