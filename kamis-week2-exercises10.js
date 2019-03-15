@@ -6,14 +6,20 @@ function perkalianUnik(arr) {
   var a = []
   var hasil
   var i
-  var j
+  var j = 0
   for(i = 0; i< length; i++){
     var jumlah = 1
-    for(j = 0; j < length; j++){
+    while(j < length){
       if(i !== j){
         jumlah = jumlah * arr[j]
       }
+      j++
     }
+    // for(j = 0; j < length; j++){
+    //   if(i !== j){
+    //     jumlah = jumlah * arr[j]
+    //   }
+    // }
     a.push(jumlah)
   }
   return a

@@ -5,7 +5,17 @@ function konversiMenit(menit) {
   jam = Math.floor(menit / i)
   //Math.floor buat pembulatan angka
   sisaJam = menit % i
-  return jam + ':' + sisaJam
+  // return jam + ':' + sisaJam
+  var str = String(sisaJam)
+  var length = str.length
+  // return length
+  if(length == 1){
+    var num = Number(sisaJam)
+    return jam + ':' + 0 + num
+  }else{
+    var num = Number(sisaJam)
+    return jam + ':' + num
+  }
 }
 
 // TEST CASES

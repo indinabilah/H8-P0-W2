@@ -15,7 +15,8 @@ function groupAnimals(animals) {
       urut.push(animals[i])
     }else{
       alpha.push(urut)
-      urut = []
+      //refresh array urut
+      urut = [] 
       samaAlpha = animals[i][0]
       urut.push(animals[i])
     }
