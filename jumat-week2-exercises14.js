@@ -14,12 +14,13 @@ function mengelompokkanAngka(arr) {
   var ngisi = []
 
   for(i = 0; i < length; i++){
-    if(arr[i] % 2 === 0){
-      isi[0].push(arr[i])
-    }else if(arr[i] % 2 !== 0){
-      isi[1].push(arr[i])
-    }else if(arr[i] % 3 === 0){
+    if(arr[i] % 3 === 0){
       isi[2].push(arr[i])
+    }
+    else if(arr[i] % 2 !== 0){
+      isi[1].push(arr[i])
+    }else{
+      isi[0].push(arr[i])
     }
   }
   return isi
